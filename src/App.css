@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  background-image: url("https://res.cloudinary.com/dh9tpjqbw/image/upload/v1710439071/Screenshot_2024-03-14_232626_bvolzt.png");
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.heading{
+  font-size: 48px;
+  font-weight: 800;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.circle-list {
+  list-style-type: circle;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+}
+.para{
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 550;
+}
+.in-color{
+  color: yellow;
+}
+.get-btn{
+  color: #ffffff;
+  background-color: red;
+  border-radius: 12px;
+  padding: 10px;
+  border-width: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.talk-btn{
+  background-color: green;
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 12px;
+  padding-left: 15px;
+  cursor: pointer;
+  padding-right: 15px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.icon{
+align-self: center;
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+}
+.buy-btn{
+  margin: 10px;
+}
+.btn-container{
+  order: 1;
+}
+.video-container-small{
+  display: none;
+}
+
+.orders{
+  display: flex;
+  flex-direction: column;
+}
+.footer_small{
+  display: none;
+}
+
+@media screen and (max-width:576px){
+  .App{
+    text-align: center;
+  }
+  .circle-list{
+    display: none;
+  }
+  .heading{
+    display: none;
+
+  }
+  .row{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .para{
+    font-size: 24px;
+    padding-top: 20px;
+    text-align: left;
+    margin: 10px;
+  }
+  .video-container{
+    display: none;
+  }
+  .video-container-small{
+    display: block;
+    width: 95vw;
+    height: 40vh;
+  }
+  .btn-container{
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .footer_small{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: red;
+    padding: 12px;
+  }
+  .links{
+    font-size: 19px;
+    margin: 10px;
+  }
+  .bold-content{
+    font-weight: bolder;
+  }
+  .get-btn{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
